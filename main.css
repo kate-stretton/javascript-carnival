@@ -60,3 +60,7 @@ td {
 .shoes {
   z-index: 1
 }
+
+#moleHill img {
+  height: 100%
+}
