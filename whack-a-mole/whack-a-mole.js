@@ -9,6 +9,10 @@ let moleHill = document.getElementsByTagName('td') // All the cells
 let mole = document.createElement('img') // An element for the mole image
 let audio = new Audio('whack-audio.wav')
 
+let = document.getElementById('tally')
+
+let count = 0
+
 // Function to select a random cell and have the mole image appear
 function showMole() {
   // Randomly generate a number between 1 & 25
@@ -30,6 +34,13 @@ mole.onclick = function whackedMole() {
   mole.remove()
   // Play audio sound
   audio.play()
+  count++
+  // console.log(count)
   // Reveal mole in new cell
   showMole()
+  displayCount()
+}
+
+function displayCount() {
+  tally.innerHTML = 'Moles: ' + count
 }
