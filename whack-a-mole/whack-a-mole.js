@@ -16,7 +16,7 @@ function showMole() {
   // Apply random number to a cell
   let randomCell = moleHill[randomNumber]
   // Define mole image
-  mole.src = 'mole.PNG'
+  mole.src = './mole.PNG'
   // Add mole image to the cell
   randomCell.appendChild(mole)
 }
